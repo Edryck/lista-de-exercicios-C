@@ -1,0 +1,242 @@
+1. Soma de dois números 
+#include <stdio.h> 
+#include <stdlib.h> 
+//*Soma de dois número*// 
+  
+int main() 
+{ 
+    int num_1,num_2,S; 
+    printf("Digite o numero: \n"); 
+    scanf("%d", &num_1); 
+    printf("Digite o outro numero: \n"); 
+    scanf("%d", &num_2); 
+    S=num_1+num_2; 
+    printf("Resultado da soma: %d", S); 
+  
+    return 0; 
+} 
+----------------------------------------------------------
+2. Soma, Subtração e divisão de dois números 
+#include <stdio.h> 
+    #include <stdlib.h> 
+    //*Soma, Subtração e divisão de dois números*// 
+  
+    int main() 
+    { 
+        int num_1,num_2,som,sub; 
+        float div; 
+        printf("Digite o numero: \n"); 
+        scanf("%d", &num_1); 
+        printf("Digite o outro numero: \n"); 
+        scanf("%d", &num_2); 
+        som=num_1+num_2; 
+        sub=num_1-num_2; 
+        if (num_2!=0){ 
+            div=(float)num_1/num_2; 
+            printf("Resultado da divisao:%f\n",div); 
+        }else { 
+            printf("Nao da pra dividir por zero.\n"); 
+        } 
+        printf("Resultado da soma:%d\n",som); 
+        printf("Resultado da subtracao:%d\n",sub); 
+  
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+3. Consumo médio de um automóvel 
+#include <stdio.h> 
+    #include <stdlib.h> 
+    //*Consumo medio de um automovel*// 
+  
+    int main() 
+    { 
+        int dt, cg;//*distancia total, combustivel gasto 
+        float m;//*media de consumo 
+        printf("Digite a distancia em Km \n"); 
+        scanf ("%d", &dt); 
+        printf("Digite a quantidade de combustivel gasto \n"); 
+        scanf ("%d", &cg); 
+        m = dt / cg; 
+        printf ("O consumo medio foi: %.2f Km/L\n", m); 
+  
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+4. Nome, Salário e bônus por venda 
+   #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Nome, Salario e bonus por venda*// 
+  
+    int main() 
+    { 
+        int v, s;// vendas e salario 
+        char nome [15]; 
+        float p, st;//porcentagem e salario total 
+        printf ("Digite o nome do vendedor:\n"); 
+        scanf ("%s", &nome); 
+        printf ("Informe o salario do vendedor:\n"); 
+        scanf ("%d", &s); 
+        printf ("Digite a quantidade de vendas em dinheiro efetuadas no mes:\n"); 
+        scanf ("%d", &v); 
+        st = s + (15.0 / 100.0 * v); 
+        printf ("O nome do vendedor e:%s\n", nome); 
+        printf ("O salario fixo dele e:%d\n", s); 
+        printf ("O salario total e:%.2f\n", st); 
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+5. Nome e média do aluno 
+#include <stdio.h> 
+    #include <stdlib.h> 
+    //*Nome e media do aluno*// 
+  
+    int main() 
+    { 
+        int n1, n2, n3;// Notas 
+        char nome [15]; 
+        float m;//Media 
+        printf ("Digite o nome do aluno:\n"); 
+        scanf ("%s", &nome); 
+        printf ("Informe a primeira nota do aluno:\n"); 
+        scanf ("%d", &n1); 
+        printf ("Informe a segunda nota do aluno:\n"); 
+        scanf ("%d", &n2); 
+        printf ("Informe a terceira nota do aluno:\n"); 
+        scanf ("%d", &n3); 
+        m = (n1 + n2 + n3)/3; 
+        printf ("O nome do aluno e:%s\n", nome); 
+        printf ("A media dele e:%.2f\n", m); 
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+6. Troca de valores 
+#include <stdio.h> 
+    #include <stdlib.h> 
+    //*Troca de valores*// 
+  
+    int main() 
+    { 
+        int p, s, vt;//p para primeiro, s para segundo e vt para valor temporario 
+        printf ("Digite o primeiro:\n"); 
+        scanf ("%d", &p); 
+        printf("Digite o segundo valor:\n"); 
+        scanf ("%d", &s); 
+        printf ("\nAntes de trocar:\nPrimeiro valor = %d\nSegundo valor = %d\n", p, s); 
+        vt = p; 
+        p = s; 
+        s = vt; 
+        printf ("\nDepois de trocar:\nPrimeiro valor = %d\nSegundo valor = %d\n", s, p); 
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+7.Conversor de Fahrenheit para Celsius 
+   #include <stdio.h> 
+    #include <stdlib.h> 
+    //*De Fahrenheit para Celsius*// 
+  
+    int main() 
+    { 
+        int F; 
+        float C; 
+        printf ("Digite  temperatura em graus Fahrenheit:\n"); 
+        scanf ("%d", &F); 
+        C = (F - 32)*(5.0 / 9.0); 
+        printf ("%d graus Fahrenheit corresponde a:\n%.2f graus Celsius", F,C); 
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+8. Conversor de Dólar para Real 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Conversor de Reais para Dólar*// 
+  
+    int main() 
+    { 
+        float R, D, TXC;//D para Dolar e TXC para taxa de câmbio e R para Real 
+        printf ("Informe o valor em dolares: \n"); 
+        scanf ("%f", &D); 
+        printf ("Informe a cotacao atual do dolar:\n"); 
+        scanf ("%f", &TXC); 
+        R = D*TXC; 
+        printf ("O valor do Real de acordo com a cotacao atual e de:\n%.2f Reais", R); 
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+9. Valor de rendimento da poupança 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Valor de rendimento da poupança*// 
+  
+    int main() 
+    { 
+        float r, vd, txj;//r para Rendimento, vd para valor depositado e txj para taxa de juros 
+        txj=0.007; 
+        printf ("Digite o valor depositado para ser calculado \n"); 
+        scanf ("%f", &vd); 
+        r = vd*txj; 
+        printf ("O rendimento na poupanca vai ser de: R$%.2f", r); 
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+10. Valor de cada Prestação 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Valor de cada Prestação*// 
+  
+    int main() 
+    { 
+        float vp, vt, P;//vp para valor do produto e vt para valor da prestacao 
+        P = 5.0;//total de parcelas 
+        printf ("Digite o valor do produto: \n"); 
+        scanf ("%f", &vp); 
+        vt = vp / P; 
+        printf ("O valor de cada prestacao e de R$%.2f", vt); 
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+11. Valor de custo e valor de venda 
+       #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Valor de custo e valor de venda*// 
+  
+    int main() 
+    { 
+        float vc, ml, vl, vt;//vc para valor de custo, ml para margem de lucro, vl para valor lucro e vt para valor total 
+        printf ("Digito o valor de custo do produto:\n"); 
+        scanf ("%f", &vc); 
+        printf("Digite a margem de lucro desejada:\n"); 
+        scanf ("%f", &ml); 
+        vl = vc * (ml/100); 
+        vt = vc + vl; 
+        printf ("O valor total do produto e de:\n R$%.2f", vt); 
+  
+        return 0; 
+    } 
+    ----------------------------------------------------------
+12. Valor de custo para o consumidor 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Valor de custo para o consumidor*// 
+  
+    int main() 
+    { 
+        float cf, pd, ti, vt, vf;//cf para custo de fabrica, pd para porcentagem do distribuidor, ti para taxa de imposto,vt para valor total e vf para valor final 
+        ti = (45); 
+        pd = (28); 
+        printf ("Digite o custo de fabrica do veiculo:\n"); 
+        scanf ("%f", &cf); 
+        vt = cf + (cf * (ti / 100)); 
+        vf = vt + (vt * (pd / 100)); 
+        printf ("O custo final para o consumidor e:\nR$ %.2f", vf); 
+  
+        return 0; 
+    }
