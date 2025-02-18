@@ -1,0 +1,165 @@
+1.Média 
+#include <stdio.h> 
+#include <stdlib.h> 
+//*Média*// 
+int main() 
+{ 
+    float a,b,c,m; 
+    a=0;b=8;c=12; 
+    m= (a+b+c)/3; 
+    printf("a media dos numeros e: %f\n", m); 
+    return 0; 
+}
+-----------------------------------------------------   
+2. Cálculo de perímetro e área 
+#include <stdio.h> 
+#include <stdlib.h> 
+//*Calculo de perimetro e area*// 
+int main() { 
+    float c,a,p,ar; 
+    printf("Digite a altura:\n"); 
+    scanf("%f",&a); 
+    printf("Digite o comprimento:\n"); 
+    scanf("%f",&c); 
+    ar=(c*a); 
+    p=(2*a)+(2*c); 
+    printf("a area e: %.2f\n",ar); 
+    printf("O perimetro e: %.2f",p); 
+    return 0; 
+} 
+-----------------------------------------------------   
+3. Produto com acréscimo de 65% 
+#include <stdio.h> 
+#include <stdlib.h> 
+//*Produto com acréscimo de 65%*// 
+int main() { 
+    float pc,a; 
+    char np[40]; 
+    printf("Digite o nome do nome do produto:\n"); 
+    fgets(np, 40,stdin); 
+    printf("Digite o preco de custo do pruduto e:\n"); 
+    scanf("%f", &pc); 
+    a=pc*1.65; 
+    printf("O nome do produto e %s e o preco e R$%.2f",np,a); 
+    return 0;
+}
+-----------------------------------------------------    
+4.Cálculo de juros composto 
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <math.h> 
+//*Calculo de juros composto*// 
+int main() { 
+    int p;//parcelas, tempo 
+    float c,m,vp;//capital, montante, valor de cada parcela 
+    printf("Digite o valor que deseja emprestado: \n"); 
+    scanf("%f",&c); 
+    printf("Digite o numero de parcelas que para fazer o pagamento: \n"); 
+    scanf("%d",&p); 
+    m=c*pow((1+0.02),p); 
+    vp=m/p; 
+    printf("O valor total a ser pago sera de R$%.2f e o valor de cada parcela sera de 
+    R$%.2f\n",m,vp); 
+    return 0; 
+} 
+-----------------------------------------------------   
+5. Cálculo de desconto 
+#include <stdio.h> 
+#include <stdlib.h> 
+//*Calculo de desconto*// 
+int main() { 
+    float v,d,d1,vf; 
+    printf("Digite o valor do produto:\n"); 
+    scanf("%f",&v); 
+    printf("Digite o valor do desconto:\n"); 
+    canf("%f",&d1); 
+    d=(d1/100)*v; 
+    vf=v-d; 
+    printf("O valor do desconto e R$%.2f e o valor final do produto e R$%.2f",d,vf); 
+    return 0; 
+}
+-----------------------------------------------------   
+6.Reajuste salarial 
+#include <stdio.h> 
+#include <stdlib.h> 
+//*Reajuste salarial*// 
+    int main() 
+    { 
+    float s,r,n,p,j; 
+    printf("***Calcular o reajuste do salario***\n"); 
+    printf("Digite seu salario:\nR$"); 
+    scanf("%f",&s); 
+    printf("Digite o percentual do reajuste:\n"); 
+    scanf("%f",&p); 
+    r=p/100; 
+    n=s*r; 
+    j=n+s; 
+    printf("O valor do seu salario apos o reajuste sera de:\nR$%.2f",j); 
+  
+    return 0; 
+    } 
+    -----------------------------------------------------   
+7.Conversao de dolar para real 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Dolar para Real*// 
+    int main() 
+    { 
+       float d,r,c; 
+       printf("*OBS.:Para valores quebrado subistitua a virgula por ponto\n"); 
+       printf("Digite o valor (em dolar):\nUS$"); 
+       scanf ("%f",&d); 
+       printf("Informe a cotacao atual do dolar:\n"); 
+       scanf("%f",&c); 
+       r=c*d; 
+       printf("Em Real corresponde a:\nR$%.2f",r); 
+  
+        return 0; 
+    } 
+    -----------------------------------------------------   
+8. Reajuste de 2% na poupança 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Reajuste de  2% na poupanca*// 
+    int main() 
+    { 
+       float p,v,t; 
+       printf("Digite o valor atual da poupanca:\nR$"); 
+       scanf("%f",&p); 
+       v=p*0.02; 
+       t=v+p; 
+       printf("O valor da poupanca apos o um reajuste de dois porcento sera 
+de:\nR$%.2f",t); 
+  
+       return 0; 
+    }
+    -----------------------------------------------------    
+9. Quadrado de um número 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Quadrado de um numero*// 
+    int main() 
+    { 
+       float n,t; 
+       printf("Digite o numero que deseja elevar ao quadrado:\n"); 
+       scanf("%f",&n); 
+       t=n*n; 
+       printf("O valor e: %.2f",t); 
+  
+       return 0; 
+    } 
+    -----------------------------------------------------   
+10. ¼ de um numero 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*¼ de um numero*// 
+    int main() 
+    { 
+       float n,t; 
+       printf("Digite o numero:\n"); 
+       scanf("%f",&n); 
+       t=n/4; 
+       printf("O valor e: %.2f",t); 
+  
+       return 0; 
+    } 
