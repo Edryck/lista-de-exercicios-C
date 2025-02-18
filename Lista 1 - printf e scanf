@@ -1,0 +1,85 @@
+1. Média das notas 
+#include <stdio.h>  
+#include <stdlib.h>  
+//*Média das notas*//  
+int main() {   
+    int nota_1, nota_2, nota_3;  
+    float media;  
+    printf("Digite a nota 1:\n");  
+    scanf("%d", &nota_1);  
+    printf("Digite a nota 2:\n");  
+    scanf("%d", &nota_2);  
+    printf("Digite a nota 3:\n");  
+    scanf("%d", &nota_3);  
+    media=((nota_1+nota_2+nota_3)/3);  
+    printf("Valor da media e: %.2f", media);  
+    return 0;  
+}
+---------------------------------------------------------------------------------
+2. Converter Celsius para Fahrenheit 
+#include <stdio.h>  
+#include <stdlib.h>  
+//*Converter Celsius para Fahrenheit*//  
+int main() {  
+    int temp_C;  
+    float resultado;  
+    printf("Digite a Temperatura: ");  
+    scanf("%d", &temp_C);  
+    resultado=((temp_C*1.8)+32);  
+    printf("Temperatura em Fahrenheit e: %.3f", resultado);  
+   
+    return 0;  
+}  
+---------------------------------------------------------------------------------
+3.  Ser ou não ser primo 
+#include <stdio.h> 
+    #include <stdlib.h> 
+    #include <math.h> 
+    //*Ser ou não ser primo*// 
+  
+    int main() 
+    { 
+    int num, np, p;//num para numero inteiro 
+    p = 1; 
+    printf("Digite um numero inteiro: \n"); 
+    scanf("%d", &num); 
+    if (num < 1){ 
+        p = 0; 
+    } else { 
+        for (np = 2;np <= sqrt(num);np++){ 
+            if (num % np == 0){ 
+                p = 0; 
+                break; 
+            } 
+        } 
+    } 
+    if (p) { 
+        printf("%d e primo.\n", num); 
+    } else { 
+        printf("%d nao e primo.\n", num); 
+    } 
+  
+        return 0; 
+    } 
+---------------------------------------------------------------------------------
+4. Fatorial de um número 
+#include <stdio.h>  
+#include <stdlib.h>  
+//*Fatorial de um número*//  
+   
+int main()  
+{  
+    int num, f;  
+    long long fatorial = 1;  
+    printf("Digite o numero que deseja calcular o fatorial: \n");  
+    scanf("%d", &num);  
+    if (num < 0) {  
+        printf("Fatorial de numero negativo nao existe.\n");}  
+        else {  
+        for (f = 1; f <= num; f++) {  
+            fatorial *= f;  
+        }  
+        printf("Fatorial de %d = %lld\n", num, fatorial);  
+    }  
+    return 0;  
+}
