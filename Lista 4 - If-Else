@@ -1,0 +1,374 @@
+1. É ou não maior que 10 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*É ou não maior que 10*// 
+    int main() 
+    { 
+       int v; 
+       printf("Digite o valor que deseja conferir:\n"); 
+       scanf("%d",&v); 
+       if (v>10){ 
+        printf("Eh maior que 10"); 
+       } else if (v<10){ 
+            printf("Eh menor que 10"); 
+           } else if (v=10){ 
+                printf("Eh 10"); 
+            } 
+       return 0; 
+    } 
+    -----------------------------------------------------
+2. Positivo ou negativo 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Positivo ou negativo*// 
+    int main() 
+    { 
+       int v; 
+       printf("Digite o valor que deseja conferir:\n"); 
+       scanf("%d",&v); 
+       if (v>0){ 
+        printf("Eh positivo"); 
+       } else if (v<0){ 
+            printf("Eh negativo"); 
+           } 
+       return 0; 
+    } 
+    -----------------------------------------------------
+3. *Valor da maça 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*VAlor da maca*// 
+    int main() 
+    { 
+       int v; 
+       printf("Quantas macas voce comprou?\n"); 
+       scanf("%d",&v); 
+       if (v>=12){ 
+        printf("Cada maca custa R$1.00"); 
+       } else if (v<12){ 
+            printf("Cada maca custa R$1.30"); 
+           }  
+       return 0; 
+    } 
+    -----------------------------------------------------
+4. Aprovado ou reprovado 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Aprovado ou reprovado*// 
+    int main() 
+    { 
+       float n1,n2,m; 
+       printf("Digite a nota 1:\n"); 
+       scanf("%f",&n1); 
+       printf("Digite a nota 2:\n"); 
+       scanf("%f",&n2); 
+       m=(n1+n2)/2; 
+       if (m>=6){ 
+        printf("Aprovado"); 
+       }else{ 
+       printf("Reprovado"); 
+       } 
+       return 0; 
+    } 
+    -----------------------------------------------------
+5. Pode ou nâo votar 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Pode ou nâo votar*// 
+    int main() 
+    { 
+       int a,n,m; 
+       printf("Digite em que ano estamos:\n"); 
+       scanf("%d",&a); 
+       printf("Digite o ano em que voce nasceu:\n"); 
+       scanf("%d",&n); 
+       m=a-n; 
+       if(m<16){ 
+        printf("Nao pode votar"); 
+        }else if (m>=16){ 
+            printf("Pode votar"); 
+        } 
+  
+       return 0; 
+    } 
+    -----------------------------------------------------
+6. Maior e menor que 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Maior e menor que*// 
+    int main() 
+    { 
+       float a,b; 
+       printf("Digite o valor 1:\n"); 
+       scanf("%f",&a); 
+       printf("Digite o valor 2:\n"); 
+       scanf("%f",&b); 
+       if(a<b){ 
+        printf("%.2f eh menor que %.2f",a,b); 
+        }else if (a>b){ 
+            printf("%.2f eh maior que %.2f",a,b); 
+        } 
+  
+       return 0; 
+    } 
+    -----------------------------------------------------
+7. Escrever em ordem crescente 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Escrever em ordem crescente*// 
+    int main() 
+    { 
+       float a,b; 
+       printf("Digite o valor 1:\n"); 
+       scanf("%f",&a); 
+       printf("Digite o valor 2:\n"); 
+       scanf("%f",&b); 
+       if(a<b){ 
+        printf("%.2f ; %.2f",a,b); 
+        }else if (a>b){ 
+            printf("%.2f ; %.2f",b,a); 
+        } 
+  
+       return 0; 
+    } 
+    -----------------------------------------------------
+8.Hora extra 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Extra*// 
+    int main() 
+    { 
+       float a,b,h,e,c; 
+       printf("Digite o total do banco de horas desse mes:\n"); 
+       scanf("%f",&a); 
+       printf("Digite o valor do salario:\n"); 
+       scanf("%f",&b); 
+       h=b/40; 
+       e=h*1.5; 
+       if (a>160){ 
+        c=a-160; 
+        c=e+b; 
+        printf("Seu salario eh: R$%.2f",c); 
+        }else if (a<=160){ 
+           printf("Seu sslario eh: R$%.2f",b); 
+       } 
+       return 0; 
+    } 
+    -----------------------------------------------------
+9.Extra 2 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Extra 2*// 
+    int main() 
+    { 
+       float s,v,t,m,c; 
+       printf("Digite o valor do seu salario:\n"); 
+       scanf("%f",&s); 
+       printf("Digite o valor de vendas efetuadas:\n"); 
+       scanf("%f",&v); 
+       c=v*.03; 
+       m=v*.05; 
+       if (v<=1500){ 
+            t=c+s; 
+            printf("O valor total do seu salario eh: R$%.2f",t); 
+       }else if (v>1500){ 
+            t=m+s; 
+            printf("O valor total do seu salario eh: R$%.2f",t); 
+       } 
+       return 0; 
+    } 
+    -----------------------------------------------------
+10. Saldo bancário 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Saldo bancario*// 
+    int main() 
+    { 
+       int n; 
+       float s,d,c,a; 
+       printf("Digite o numero da sua conta:\n"); 
+       scanf("%d",&n); 
+       printf("Digite o seu saldo:\nR$"); 
+       scanf("%f",&s); 
+       printf("Digite quantidade debitada:\nR$"); 
+       scanf("%f",&d); 
+       printf("Digite quantidade creditada:\nR$"); 
+       scanf("%f",&c); 
+       a=s-d+c; 
+       printf("Seu saldo atual eh de R$%.2f\n",a); 
+       if (a>=0){ 
+        printf("O seu saldo esta positivo"); 
+       }else { 
+         printf("O seu saldo esta negativo"); 
+         } 
+       return 0; 
+    } 
+    -----------------------------------------------------
+11. Efetuar compra de acordo com a quantidade em estoque 
+    #include <stdlib.h> 
+    //*Efetuar compra de acordo com a quantidade em estoque*// 
+    int main() 
+    { 
+       int qe,mx,mn; 
+       float m; 
+       printf("Digite a quantidade do produto em estoque:\n"); 
+       scanf("%d",&qe); 
+       printf("Digite a quantidade maxima que pode deixar em estoque:\n"); 
+       scanf("%d",&mx); 
+       printf("Digite a quantidade minima que pode deixar em estoque:\n"); 
+       scanf("%d",&mn); 
+       m=(mx+mn)/2; 
+       printf("A quantidade media eh: %.1f\n",m); 
+       if (qe>=m){ 
+        printf("Nao efetuar compra"); 
+       } else { 
+          printf("Efetuar compra"); 
+          } 
+       return 0; 
+    } 
+    -----------------------------------------------------
+12. Valor é positivo, negativo ou zero 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Valor é positivo, negativo ou zero*// 
+    int main() 
+    { 
+       float n; 
+       printf("Digite um numero:\n"); 
+       scanf("%f",&n); 
+       if (n<=-1){ 
+        printf("Esse numero eh negativo"); 
+       }else if (n>=1){ 
+         printf("Esse numero eh positivo"); 
+         } else printf("Esse numero eh zero"); 
+       return 0; 
+    } 
+    -----------------------------------------------------
+13. Combustível 
+#include <stdio.h> 
+#include <stdlib.h> 
+  
+//*Combustivel*// 
+  
+int main() { 
+    float q, v; 
+    char t; 
+    float A=2.9,G = 3.3; 
+    printf("Quantidade de litros vendidos:\n"); 
+    scanf("%f",&q); 
+    while ((getchar())!='\n'); 
+    printf("Digite o tipo de combustivel (A para alcool; G para gasolina): "); 
+    scanf("%c",&t); 
+    if (t=='A'){ 
+        if (q<=20){ 
+            v=(A-A*.03)*q; 
+        } else { 
+            v=(A-A*.05)*q; 
+        } 
+    } else if (t=='G'){ 
+        if (q<=20){ 
+            v=(G-G*.04)*q; 
+        } else { 
+            v=(G-G*.06)*q; 
+        } 
+    } else { 
+        printf("Caractere invalido.\n"); 
+        return 1; 
+    } 
+    printf("O valor a ser pago eh de: R$%.2f\n",v); 
+    return 0; 
+    } 
+    -----------------------------------------------------
+14. 
+#include <stdio.h> 
+#include <stdlib.h> 
+int main() 
+{ 
+    int h1,h2,m1,m2,hn,hv,mn,mv,s,p; 
+    printf("Digite a idade do primeiro homem:\n"); 
+    scanf("%d",&h1); 
+    printf("Digite a idade do segundo homem:\n"); 
+    scanf("%d",&h2); 
+    printf("Digite a idade da primeira mulher:\n"); 
+    scanf("%d",&m1); 
+    printf("Digite a idade da segunda mulher:\n"); 
+    scanf("%d",&m2); 
+     if (h1>h2) { 
+        hv=h1; 
+        hn=h2; 
+    } else { 
+        hv=h2; 
+        hn=h1; 
+    } 
+    if (m1>m2) { 
+        mv=m1; 
+        mn=m2; 
+    } else { 
+        mv=m2; 
+        mn=m1; 
+    } 
+    s=hv+mn; 
+    p=hn*mv; 
+    printf("Soma das idades do homem mais velho com a mulher mais nova eh: %d\n",s); 
+    printf("Produto das idades do homem mais novo com a mulher mais velha eh: %d\n",p); 
+    return 0; 
+} 
+    -----------------------------------------------------
+15.Fruteira 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+//*Compras*// 
+    int main() 
+    { 
+    float kgmo,kgma,pmo,pma,t,vt; 
+    float d=0.0,pmo5=2.50,pmoa5=2.20,pma5=1.80,pmaa5=1.50; 
+    printf("Digite a quantidade de morangos (em Kg):\n"); 
+    scanf("%f",&kgmo); 
+    printf("Digite a quantidade de macas (em Kg):\n"); 
+    scanf("%f",&kgma); 
+    if (kgmo>5){ 
+        pmo=kgmo*pmoa5; 
+    } else{ 
+        pmo= kgmo*pmo5; 
+    } 
+    if (kgma>5){ 
+        pma=kgma*pmaa5; 
+    }else{ 
+        pma=kgma*pma5; 
+    } 
+    vt=pmo+pma; 
+    if ((kgmo+kgma>8)||(vt>25)){ 
+        d=vt*0.10; 
+    } 
+    t=vt-d; 
+    printf("O valor a ser pago eh: R$%.2f\n",t); 
+        return 0; 
+    } 
+    -----------------------------------------------------
+16. Preço do produto e desconto 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+    //*Preço do produto e desconto*// 
+    int main() 
+    { 
+        int q; 
+        float v,vt,d,p; 
+        char n[20]; 
+        printf("Digite o nome do produto: "); 
+        scanf("%s",n); 
+        printf("Digite a quantidade do produto: "); 
+        scanf("%d",&q); 
+        printf("Digite o preco unitario do produto: R$"); 
+        scanf("%f",&p); 
+        v=q*p; 
+        if (q<=5){ 
+            (d=0.02); 
+        }else if ((q>5)&&(q<=10)){ 
+            (d=0.03); 
+        }else if (q>10){ 
+            (d=0.05); 
+        } 
+        vt=v*(1-d); 
+        printf("O valor eh: R$%.2f\nO valor total com desconto eh: R$%.2f",v,vt); 
+        return 0; 
+    }
