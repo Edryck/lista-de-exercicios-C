@@ -1,0 +1,222 @@
+1. Conferir se o número digitado é positivo, negativo ou zero. 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+ 
+    int main() 
+    { 
+        int num; 
+        printf("***Conferir se o número é negativo, positivo ou zero***\n"); 
+        printf("Digite o numero que deseja conferir (pertencente aos conjunto dos 
+inteiros):\n"); 
+        scanf("%d",&num); 
+        if (num<0){ 
+            printf("O numero e negativo."); 
+        }else if (num>0){ 
+            printf("O numero e positivo."); 
+        }else { 
+            printf("Voce digitou o numero 0."); 
+        } 
+        return 0; 
+    } 
+    ---------------------------------------------- 
+2. Cálculo do IMC. 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+ 
+    int main() 
+    { 
+       float p,a,imc; 
+       printf("***Calculo do IMC***\n"); 
+       printf("Digite o seu peso (em Kg): \n"); 
+       scanf("%f",&p); 
+       printf("Digite a sua altura (em m): \n"); 
+       scanf("%f",&a); 
+       imc=p/(a*a); 
+       if (imc<18.5){ 
+           printf("Voce esta abaixo do peso normal."); 
+       }else if ((imc>=18.5)&&(imc<=24.9)){ 
+           printf("Voce esta com o peso normal."); 
+       }else if ((imc>=25)&&(imc<=29.9)){ 
+           printf("Voce esta sobrepeso"); 
+       }else if ((imc>=30)&&(imc<=34.9)){ 
+           printf("Voce alcancou a obesidade grau 1."); 
+       }else if ((imc>=35)&&(imc<=39.9)){ 
+           printf("Voce alcancou a obesidade de grau 2."); 
+       }else { 
+           printf("Voce alcancou a obesidade de grau 3."); 
+       } 
+        return 0; 
+    } 
+    ----------------------------------------------
+3. Maior e o menor número entre três números digitados. 
+#include <stdio.h 
+#include <stdlib.h> 
+int main() { 
+    float n1,n2,n3,me,ma; 
+    printf("***Maior e o menor número entre três números digitados***\n"); 
+    printf("Digite o primeiro numero: \n"); 
+    scanf("%f",&n1); 
+    printf("Digite o segundo numero: \n"); 
+    scanf("%f",&n2); 
+    printf("Digite o terceiro numero: \n"); 
+    scanf("%f",&n3); 
+    if ((n1>=n2)&&(n1>=n3)){ 
+        ma=n1; 
+    }else if ((n2>=n1)&&(n2>=n3)){ 
+        ma=n2; 
+    }else { 
+        ma=n3; 
+    } 
+    if ((n1<=n2)&&(n1<=n3)){ 
+        me=n1; 
+    }else if((n2<=n1)&&(n2<=n3)){ 
+        me=n2; 
+    }else{ 
+        me=n3; 
+    } 
+    printf("Maior numero: %.1f\nMenor numero: %.1f",ma,me); 
+    return 0; 
+    } 
+    ----------------------------------------------
+4. Dia  da semana correspondente ao número digitado. 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+ 
+    int main() 
+    { 
+        int n; 
+        printf("***Dia  da semana correspondente ao numero digitado***\n"); 
+        printf("Digite um numero entre 1 e 7:\n"); 
+        scanf("%d",&n); 
+        switch (n){ 
+            case 1: 
+                printf("Eh domingo."); 
+                break; 
+            case 2: 
+                printf("Eh segunda-feira."); 
+                break; 
+            case 3: 
+                printf("Eh terca-feira."); 
+                break; 
+            case 4: 
+                printf("Eh quarta-feira."); 
+                break; 
+            case 5: 
+                printf("Eh quinta-feira."); 
+                break; 
+            case 6: 
+                printf("Eh sexta-feira."); 
+                break; 
+            case 7: 
+                printf("Eh sabado."); 
+                break; 
+            default: 
+                printf("O numero digitado eh invalido."); 
+                break; 
+        } 
+        return 0; 
+    } 
+    ----------------------------------------------
+5. Mês correspondente ao número digitado. 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+ 
+    int main() 
+    { 
+        int n; 
+        printf("***Mes correspondente ao numero digitado***\n"); 
+        printf("Digite um numero entre 1 e 12:\n"); 
+        scanf("%d",&n); 
+        switch (n){ 
+            case 1: 
+                printf("Eh Janeiro."); 
+                break; 
+            case 2: 
+                printf("Eh Fevereiro."); 
+                break; 
+            case 3: 
+                printf("Eh Marco."); 
+                break; 
+            case 4: 
+                printf("Eh Abril."); 
+                break; 
+            case 5: 
+                printf("Eh Maio."); 
+                break; 
+            case 6: 
+                printf("Eh Junho."); 
+                break; 
+            case 7: 
+                printf("Eh Julho."); 
+                break; 
+            case 8: 
+                printf("Eh Agosto."); 
+                break; 
+            case 9: 
+                printf("Eh Setembro."); 
+                break; 
+            case 10: 
+                printf("Eh Outubro."); 
+                break; 
+            case 11: 
+                printf("Eh Novembro."); 
+                break; 
+            case 12: 
+                printf("Eh Dezembro."); 
+                break; 
+            default: 
+                printf("O numero digitado eh invalido."); 
+                break; 
+        } 
+        return 0; 
+    } 
+    ----------------------------------------------
+6. Conferir se a letra digitada é vogal ou consoante. 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+ 
+    int main() 
+    { 
+        char l; 
+        printf("***Letra ser ou nao ser vogal***\n"); 
+        printf("Digite a letra:\n"); 
+        scanf("%c",&l); 
+        switch (l){ 
+            case 'a': 
+            case 'A': 
+            case 'e': 
+            case 'E': 
+            case 'i': 
+            case 'I': 
+            case 'o': 
+            case 'O': 
+            case 'u': 
+            case 'U': 
+                printf("Eh Vogal"); 
+                break; 
+            default: 
+                printf("Eh uma consoante."); 
+                break; 
+        } 
+        return 0; 
+    } 
+    ----------------------------------------------
+7. Menor de Idade, Idoso ou adulto. 
+    #include <stdio.h> 
+    #include <stdlib.h> 
+ 
+    int main() 
+    { 
+        int i; 
+        printf("***Menor de idade, Adulto ou Idoso***\n"); 
+        printf("Digite a sua idade:\n"); 
+        scanf("%d",&i); 
+        if (i<18){ 
+            printf("Voce eh menor de idade"); 
+        }else if ((i>=18)&&(i<=65)){ 
+            printf("Voce eh adulto"); 
+        }else{ 
+            printf("Voce eh idoso"); 
+        } 
+        return 0; 
+    }
